@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="seq.css">
+    <title>Sequence form</title>
+</head>
+
+<body>
+    <form method="GET" action="https://www.random.org/sequences/">
+        <div class="col">
+            <label for="min">Minimum Value:</label>
+            <input type="text" id="min" name="min" value="1">
+        </div>
+        <div class="col">
+            <label for="max">Maximum Value:</label>
+            <input type="text" id="max" name="max" value="100">
+        </div>
+        <div class="col">
+            <label for="col">Number of Columns:</label>
+            <input type="text" id="col" name="col" value="1">
+        </div>
+        <div class="col">
+            <label for="format">Format:</label>
+            <select id="format" name="format">
+                <option value="plain">Plain Text</option>
+                <option value="html">HTML</option>
+                <option value="url">URL Encoded</option>
+            </select>
+        </div>
+        <input class="submit" type="submit" value="Generate Sequence">
+    </form>
+</body>
+
+
+</html>

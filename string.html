@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="string.css">
+    <title>String form</title>
+</head>
+
+<body>
+    <form method="GET" action="https://www.random.org/strings/">
+        <div class="row">
+            <div class="col">
+                <label for="num">Number of Strings:</label>
+                <input type="text" id="num" name="num" value="1">
+            </div>
+            <div class="col">
+                <label for="len">String Length:</label>
+                <input type="text" id="len" name="len" value="8">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div>
+                <label for="upperalpha">Include Uppercase Alphabets:</label>
+                <input type="checkbox" id="upperalpha" name="upperalpha" value="on">
+            </div>
+            <div>
+                <label for="loweralpha">Include Lowercase Alphabets:</label>
+                <input type="checkbox" id="loweralpha" name="loweralpha" value="on">
+            </div>
+        </div>  
+        <div class="row">
+            <div>
+                <label for="unique">Unique strings:</label>
+                <input type="checkbox" id="unique" name="unique" value="on">
+            </div>
+            <div>
+                <label for="digits">Include Digits:</label>
+                <input type="checkbox" id="digits" name="digits" value="on">
+            </div>
+        </div>
+        <div class="col">
+            <label for="format">Format:</label>
+            <select id="format" name="format">
+                <option value="plain">Plain Text</option>
+                <option value="html">HTML</option>
+            </select>
+        </div>
+        <input class="submit" type="submit" value="Generate Strings">
+    </form>
+</body>
+
+</html>

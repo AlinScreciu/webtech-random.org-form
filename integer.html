@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="integer.css">
+    <title>Integer form</title>
+</head>
+
+<body>
+    <form action="https://www.random.org/integers/" method="get" target="_blank">
+        <!-- num -->
+        <div class="col">
+            <label for="num">Number of integers</label>
+            <input value="1" id="num" name="num" type="number" />
+        </div>
+        <!-- min max -->
+        <div class="col">
+            <label for="min">Minimum value</label>
+            <input value="1" type="number" id="min" name="min" />
+        </div>
+        <div class="col">
+            <label for="max">Maximum value</label>
+            <input value="10" type="number" id="max" name="max" />
+        </div>
+        <!-- col -->
+        <div class="col">
+            <label for="col">Colums to display the integers in</label>
+            <input type="number" value="1" id="col" name="col" />
+        </div>
+        <!-- base -->
+        <!-- format -->
+        <div class="col">
+            <label for="base">The base of the integers</label>
+            <div style="align-self: center;">
+                <select id="base" name="base">
+                    <option value="2">2</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="16">16</option>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+            <label for="format" style="align-self: center;">Format</label>
+            <div id="format" class="row">
+                <div>
+                    <label for="format_plain" style="align-self: center;">Plain</label>
+                    <input id="format_plain" name="format" type="radio" checked value="plain" />
+                </div>
+                <label for="format_html" style="align-self: center;">HTML</label>
+                <input id="format_html" name="format" type="radio" value="html" />
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="submit" value="SUBMIT" class="submit" />
+            <input type="button" onclick="window.location='http:\/\/localhost:5500/index.html';" value="VALIDATE" class="submit" />
+        </div>
+    </form>
+</body>
+
+</html>
